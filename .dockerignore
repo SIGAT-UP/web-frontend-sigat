@@ -1,0 +1,16 @@
+.git
+.gitignore
+.github
+node_modules
+dist
+coverage
+playwright-report
+test-results
+.env
+.env.*
+!.env.example
+*.md
+compose*.yaml
+compose*.yml
+Dockerfile
+.dockerignore
