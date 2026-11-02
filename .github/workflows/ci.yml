@@ -1,0 +1,40 @@
+name: CI
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sin archivos .env reales en el repositorio
+        run: |
+          if git ls-files | grep -E '(^|/)\.env($|\.)' | grep -v '\.env\.example$'; then
+            echo "No suba archivos .env"; exit 1
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Tipos, lint, pruebas y build de producción
+        run: npm run check
+      - name: Dependencias con vulnerabilidades conocidas (altas o críticas)
+        run: npm audit --audit-level=high --omit=dev
+      - name: Script de configuración de nginx (sintaxis)
+        run: sh -n docker/40-sigat-config.sh
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Imagen de producción
+        run: docker build -t sigat-web:ci .
+      - name: La imagen no arranca sin backend (modo A) y /api responde JSON
+        run: |
+          if docker run --rm sigat-web:ci nginx -t; then echo "Debía fallar sin SIGAT_API_UPSTREAM"; exit 1; fi
+          docker run -d --name web -p 8080:80 -e SIGAT_API_UPSTREAM=http://127.0.0.1:9 sigat-web:ci
+          sleep 3
+          curl -s -o /dev/null -w '%{http_code} %{content_type}\n' http://127.0.0.1:8080/api/v1/salud | tee r.txt
+          grep -q '502 application/problem+json' r.txt
+          curl -sI http://127.0.0.1:8080/ | grep -i '^content-security-policy'

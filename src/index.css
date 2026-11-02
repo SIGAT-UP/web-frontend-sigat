@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Sistema de diseño SIGAT — ver DESIGN.md en la raíz del proyecto.
+   Tokens de diseño tomados de la paleta de la app móvil (AppColors) y del video del aplicativo web. */
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --color-brand: #0b8a4e;
+  --color-brand-dark: #1e5e3b;
+  --color-brand-soft: #e6f4ec;
+  --color-brand-strong: #17573a;
+
+  --color-nav: #10382a;
+  --color-nav-raised: #1a4a37;
+  --color-nav-muted: #a8c6b7;
+  --color-nav-sprout: #7ddba8;
+
+  --color-surface: #f4f7f5;
+  --color-surface-raised: #edf2ef;
+  --color-surface-tint: #f3faf6;
+  --color-line: #e1e6e3;
+  --color-line-strong: #c9d1cc;
+
+  --color-ink: #1b1f1d;
+  --color-ink-2: #6b7370;
+  --color-ink-3: #a3aaa6;
+
+  --color-danger: #d32f2f;
+  --color-danger-soft: #fdecec;
+  --color-danger-line: #f2b8b8;
+  --color-info: #2f6fd3;
+  --color-info-soft: #eaf2fd;
+  --color-info-line: #c7dbf7;
+  --color-info-text: #1f4f9e;
+  --color-warn: #c98a00;
+  --color-warn-strong: #e0a100;
+  --color-warn-text: #8a5a00;
+  --color-warn-soft: #fff6e0;
+  --color-warn-line: #f3d79a;
+  --color-ok: #0b8a4e;
+  --color-ok-line: #bfe3ce;
+
+  /* La profundidad se logra con bordes (line → line-strong), no con sombras. */
+  --shadow-card: 0 1px 0 rgb(16 56 42 / 0.03);
+
+  --radius-card: 14px;
+  --radius-control: 10px;
+  --radius-modal: 20px;
+  --shadow-modal: 0 20px 50px rgb(16 56 42 / 0.25);
+}
+
+html { scroll-behavior: smooth; }
+html, body, #root { min-height: 100%; }
+body { @apply bg-surface text-ink font-sans antialiased; font-size: 14px; }
+:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+
+@keyframes alert-bar { from { transform: scaleX(1); } to { transform: scaleX(0); } }

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 110" width="360" height="110" role="img" aria-label="SIGAT">
+<title>SIGAT — Logotipo horizontal (Concepto E)</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+.w{font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:600;fill:#0F3D2A}
+.t{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-weight:500;fill:#1F6B43}</style>
+<svg x="0" y="5" width="100" height="100" viewBox="0 0 200 200">
+<defs>
+<clipPath id="se-clip"><path d="M0,-5 C18,-15 50,-22 74,-16 C88,-12 94,0 86,10 C74,22 30,20 0,6 Z"/></clipPath>
+<linearGradient id="se-scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2E7D4F" stop-opacity="0"/><stop offset=".5" stop-color="#2E7D4F" stop-opacity=".9"/><stop offset="1" stop-color="#2E7D4F" stop-opacity="0"/></linearGradient>
+</defs>
+<g fill="none" stroke="#0F3D2A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14,44 L14,14 L44,14"/><path d="M156,14 L186,14 L186,44"/>
+<path d="M186,156 L186,186 L156,186"/><path d="M44,186 L14,186 L14,156"/>
+</g>
+<g stroke="#2E7D4F" stroke-width="2" stroke-linecap="round">
+<line x1="100" y1="6" x2="100" y2="16"/><line x1="100" y1="184" x2="100" y2="194"/>
+<line x1="6" y1="100" x2="16" y2="100"/><line x1="184" y1="100" x2="194" y2="100"/>
+</g>
+<g transform="translate(100,104) scale(.74) translate(-100,-92)">
+<g id="se-w" transform="translate(114,80) rotate(30)">
+<path d="M0,-5 C18,-15 50,-22 74,-16 C88,-12 94,0 86,10 C74,22 30,20 0,6 Z" fill="#0F3D2A"/>
+<g clip-path="url(#se-clip)">
+<path d="M14,-30 L64,-30 L62,-12 C46,-14 30,-11 16,-7 Z" fill="#2E7D4F"/>
+<path d="M34,-30 L46,-30 L60,30 L45,30 Z" fill="#FFF3D6"/>
+<path d="M64,-30 L74,-30 L84,30 L71,30 Z" fill="#2E7D4F"/>
+<g stroke="#0F3D2A" stroke-width="1.8">
+<line x1="12" y1="-30" x2="12" y2="30"/><line x1="20" y1="-30" x2="20" y2="30"/><line x1="28" y1="-30" x2="28" y2="30"/>
+<line x1="36" y1="-30" x2="36" y2="30"/><line x1="44" y1="-30" x2="44" y2="30"/><line x1="52" y1="-30" x2="52" y2="30"/>
+<line x1="60" y1="-30" x2="60" y2="30"/><line x1="68" y1="-30" x2="68" y2="30"/><line x1="76" y1="-30" x2="76" y2="30"/>
+<line x1="84" y1="-30" x2="84" y2="30"/><line x1="0" y1="-9" x2="92" y2="-9"/>
+</g>
+</g>
+<g fill="none" stroke="#E6F2EA" stroke-width="1.1" stroke-linejoin="round"><path d="M3,0 L30,-4 L58,-4 L84,0"/><path d="M4,4 L34,9 L62,12 L80,12"/></g>
+<g fill="#F6F7F6"><circle cx="30" cy="-4" r="2"/><circle cx="58" cy="-4" r="2"/><circle cx="34" cy="9" r="2"/><circle cx="62" cy="12" r="2"/></g>
+<path d="M0,-5 C18,-15 50,-22 74,-16 C88,-12 94,0 86,10 C74,22 30,20 0,6 Z" fill="none" stroke="#2E7D4F" stroke-width="1.8" stroke-linejoin="round"/>
+</g>
+<use xlink:href="#se-w" href="#se-w" transform="translate(200,0) scale(-1,1)"/>
+<rect x="86" y="108" width="28" height="50" rx="14" fill="#8A5A00"/>
+<rect x="86" y="122" width="28" height="3.5" fill="#FFF3D6"/>
+<rect x="87" y="137" width="26" height="3.5" fill="#FFF3D6"/>
+<polygon points="92,101 108,101 100,111" fill="#2E7D4F"/>
+<polygon points="100,62 117.3,72 117.3,92 100,102 82.7,92 82.7,72" fill="#0F3D2A" stroke="#2E7D4F" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M92,74 L100,80 L108,74 M100,80 L100,95 M92,88 L100,95 L108,88" fill="none" stroke="#E6F2EA" stroke-width=".9"/>
+<g fill="#F6F7F6">
+<circle cx="92" cy="74" r="2.4"/><circle cx="108" cy="74" r="2.4"/><circle cx="100" cy="80" r="2"/>
+<circle cx="92" cy="88" r="2.4"/><circle cx="108" cy="88" r="2.4"/><circle cx="100" cy="95" r="2"/>
+</g>
+<rect x="84" y="47" width="32" height="15" rx="7.5" fill="#FFF3D6" stroke="#0F3D2A" stroke-width="1.2"/>
+<circle cx="88" cy="54" r="8.5" fill="#B42318"/>
+<circle cx="112" cy="54" r="8.5" fill="#B42318"/>
+<circle cx="88" cy="54" r="4" fill="none" stroke="#F6F7F6" stroke-width="1.2"/>
+<circle cx="112" cy="54" r="4" fill="none" stroke="#F6F7F6" stroke-width="1.2"/>
+<g stroke="#0F3D2A" stroke-width="1.6" stroke-linecap="round"><path d="M96,46 L91,36"/><path d="M104,46 L109,36"/></g>
+<path d="M91,27 L94.5,32 L91,37 L87.5,32 Z" fill="#2E7D4F"/>
+<path d="M109,27 L112.5,32 L109,37 L105.5,32 Z" fill="#2E7D4F"/>
+</g>
+<rect x="22" y="138" width="156" height="2" fill="url(#se-scan)"/>
+</svg>
+<text class="w" x="118" y="70" font-size="52" textLength="214" lengthAdjust="spacing">SIGAT</text>
+<rect x="338" y="60" width="10" height="10" fill="#2E7D4F"/>
+<text class="t" x="119" y="94" font-size="12" letter-spacing="1.7">MONITOREO / AGTECH</text>
+</svg>
